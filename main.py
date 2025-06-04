@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 import numpy as np
-
+import os
 # Load your pre-trained model
 model_path = os.path.join("artifacts", "model.joblib")
 model = joblib.load(model_path)
