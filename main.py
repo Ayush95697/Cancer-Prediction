@@ -10,7 +10,7 @@ st.title("Breast Cancer Diagnosis Prediction")
 st.write("Enter the following features to get diagnosis prediction (0 = Benign, 1 = Malignant)")
 
 # Organize inputs into collapsible sections
-with st.expander("**Mean Features**", expanded=False):
+with st.expander("**Mean Features**", expanded=True):
     col1, col2 = st.columns(2)
     with col1:
         radius_mean = st.number_input("Radius Mean", min_value=0.0, value=10.0)
