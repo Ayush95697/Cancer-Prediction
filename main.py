@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load your pre-trained model
-model_path = r"C:\Users\ayush\OneDrive\Desktop\Cancer-Prediction-main\Cancer-Prediction-main\model.joblib"
+model_path = os.path.join("artifacts", "model.joblib")
 model = joblib.load(model_path)
 
 st.title("Breast Cancer Diagnosis Prediction")
