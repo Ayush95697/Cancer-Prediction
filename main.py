@@ -6,7 +6,7 @@ import os
 model_path = os.path.join("artifacts", "model.joblib")
 model = joblib.load(model_path)
 
-st.title("Breast Cancer Diagnosis Prediction")
+st.title("Cancer Diagnosis Prediction")
 st.write("Enter the following features to get diagnosis prediction (0 = Benign, 1 = Malignant)")
 
 with st.expander("**Mean Features**", expanded=True):
