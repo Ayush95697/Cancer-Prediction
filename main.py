@@ -2,14 +2,13 @@ import streamlit as st
 import joblib
 import numpy as np
 import os
-# Load your pre-trained model
+# Load  pre-trained model
 model_path = os.path.join("artifacts", "model.joblib")
 model = joblib.load(model_path)
 
 st.title("Breast Cancer Diagnosis Prediction")
 st.write("Enter the following features to get diagnosis prediction (0 = Benign, 1 = Malignant)")
 
-# Organize inputs into collapsible sections
 with st.expander("**Mean Features**", expanded=True):
     col1, col2 = st.columns(2)
     with col1:
